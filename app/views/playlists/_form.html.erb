@@ -1,0 +1,16 @@
+<%= form_with(model: playlist, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_votes %>
+    <%= form.text_field :number_of_votes %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

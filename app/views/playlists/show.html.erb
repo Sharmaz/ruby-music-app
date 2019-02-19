@@ -1,0 +1,10 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @playlist.name %>
+  <strong>Votes:</strong>
+  <%= @playlist.number_of_votes %>
+</p>
+
+<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
+<%= link_to 'Back', playlists_path %>
