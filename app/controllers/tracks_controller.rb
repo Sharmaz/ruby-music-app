@@ -2,6 +2,7 @@
 
 # TracksController class with CRUD methods
 class TracksController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_track, only: %i[show edit update destroy]
 
   # GET /tracks
